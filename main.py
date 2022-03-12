@@ -3,6 +3,7 @@ import tweepy
 from dotenv import load_dotenv
 load_dotenv()
 import os
+from datetime import date
 
 def send_tweet(api):
     image = api.media_upload('./assets/itswednesday.mp4')
@@ -15,8 +16,9 @@ def authenticate(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET):
     return api
 
 def main():
-    api = authenticate(os.environ.get("API_KEY"), os.environ.get("API_SECRET"), os.environ.get("ACCESS_TOKEN"), os.environ.get("ACCESS_SECRET"))
-    send_tweet(api)
+    if date.today().weekday() == 2:     
+        api = authenticate(os.environ.get("API_KEY"), os.environ.get("API_SECRET"), os.environ.get("ACCESS_TOKEN"), os.environ.get("ACCESS_SECRET"))
+        send_tweet(api)
 
 if __name__ == "__main__":
     main()
