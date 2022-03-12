@@ -1,0 +1,25 @@
+{
+  "name": "itswedmydudestweeter",
+  "version": "1.0.0",
+  "description": "twitter bot to tweet wednesday video",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelzapata/ItsWedMyDudesTweeter.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "emanuel-zapata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanuelzapata/ItsWedMyDudesTweeter/issues"
+  },
+  "homepage": "https://github.com/emanuelzapata/ItsWedMyDudesTweeter#readme",
+  "engines": {
+    "node":"14.x"
+  }
+}
