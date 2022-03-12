@@ -2,7 +2,7 @@
   "name": "itswedmydudestweeter",
   "version": "1.0.0",
   "description": "twitter bot to tweet wednesday video",
-  "main": "app.js",
+  "main": "app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,14 @@
   },
   "homepage": "https://github.com/emanuelzapata/ItsWedMyDudesTweeter#readme",
   "engines": {
-    "node":"14.x"
+    "node": "14.x"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "twitter-api-v2": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
   }
 }
